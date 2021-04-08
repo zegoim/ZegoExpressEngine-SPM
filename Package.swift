@@ -16,13 +16,10 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "ZegoExpressEngine",
-            dependencies: []),
-        .testTarget(
-            name: "ZegoExpressEngineTests",
-            dependencies: ["ZegoExpressEngine"]),
+            url: "https://storage.zego.im/express/video/apple/zego-express-video-apple.zip",
+            checksum: "e25ed76fc0ee3e4c845bddf3d23d06e1847a4602fe952353d8e5304042fbc97b"
+        )
     ]
 )
